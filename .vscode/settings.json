@@ -24,5 +24,8 @@
   },
   "[django-txt]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   } // Don't run prettier for files listed in .gitignore
 }
