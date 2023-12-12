@@ -1,6 +1,4 @@
-import type { ReactNode } from "react";
-
-import Header from "@/layouts/Header";
+import type { ReactNode } from 'react';
 
 type IMainProps = {
   meta: ReactNode;
@@ -14,7 +12,6 @@ const Main = (props: IMainProps) => {
       {props.meta}
 
       <div className="mx-auto w-full">
-        <Header />
         <main className="text-xl">{props.children}</main>
       </div>
     </div>
