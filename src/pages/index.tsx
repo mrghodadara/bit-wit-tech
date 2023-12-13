@@ -1,6 +1,8 @@
 import React from 'react';
 
+import { About } from '@/components/sections/About';
 import { Hero } from '@/components/sections/Hero';
+import { Service } from '@/components/sections/Service';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -15,6 +17,8 @@ const Index = () => {
       }
     >
       <Hero />
+      <About />
+      <Service />
     </Main>
   );
 };

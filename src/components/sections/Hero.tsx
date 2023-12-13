@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import { NAV_LINK } from '@/constants';
-import Container from '@/layouts/Container';
+import { Container } from '@/layouts/Container';
 
 const Hero = () => {
   return (
