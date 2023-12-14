@@ -24,13 +24,7 @@ const OUR_SERVICES: {
       'We start from idea to its development and provide end to end solution.We guide our valued clients through all stages in the production of website',
     icon: <ComputerIcon />,
   },
-  {
-    id: 2,
-    name: 'Digital Marketing',
-    description:
-      'Social media can be a great place to advertise your product, services, and business.We provide excellent social media marketing services.',
-    icon: <HeartIcon />,
-  },
+
   {
     id: 3,
     name: 'Mobile Development',
@@ -44,6 +38,13 @@ const OUR_SERVICES: {
     description:
       'We deliver easy-to-use interfaces while providing the enterprise-grade code quality.',
     icon: <CameraIcon />,
+  },
+  {
+    id: 2,
+    name: 'Digital Marketing',
+    description:
+      'Social media can be a great place to advertise your product, services, and business.We provide excellent social media marketing services.',
+    icon: <HeartIcon />,
   },
   {
     id: 5,

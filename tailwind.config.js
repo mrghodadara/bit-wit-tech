@@ -25,7 +25,10 @@ module.exports = {
       },
       backgroundImage: {
         banner: "url('/assets/images/banner.png')",
+        portfolio: "url('/assets/images/bg-image-6.jpg')",
         service: "url('/assets/images/bg-image-2.jpg')",
+        serviceHover: 'linear-gradient(to right, #743a8f, #3c0a77)',
+        'team-hover': 'linear-gradient(to bottom, #852d9d, #3c0a77)',
       },
     },
   },
