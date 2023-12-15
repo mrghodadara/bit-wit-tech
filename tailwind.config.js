@@ -13,6 +13,8 @@ module.exports = {
       colors: {
         primary: '#3a0a76',
         light: {
+          50: '#f8f9fc',
+          100: '#ebebeb',
           purple: {
             50: '#33065b',
             100: '#160550',

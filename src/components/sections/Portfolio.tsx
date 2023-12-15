@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Container } from '@/layouts/Container';
 
+import { Counter } from '../counter/Index';
+
 const LISTS: { id: number; label: string; count: number }[] = [
   { id: 1, label: 'Years of Experience', count: 6 },
   { id: 2, label: 'Projects', count: 46 },
@@ -21,8 +23,7 @@ const Portfolio = () => {
                 className="flex flex-col items-center justify-center gap-4"
               >
                 <h3 className="font-poppins text-7xl font-semibold leading-[80px] text-white">
-                  {count}
-                  <sup>+</sup>
+                  <Counter limit={count} />
                 </h3>
                 <p className="font-poppins text-xl font-semibold leading-6 text-white">
                   {label}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { About } from '@/components/sections/About';
+import { Contact } from '@/components/sections/Contact';
 import { Hero } from '@/components/sections/Hero';
 import { Portfolio } from '@/components/sections/Portfolio';
 import { Service } from '@/components/sections/Service';
@@ -23,6 +24,7 @@ const Index = () => {
       <Service />
       <Team />
       <Portfolio />
+      <Contact />
     </Main>
   );
 };
