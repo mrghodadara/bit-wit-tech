@@ -6,6 +6,7 @@ import { Hero } from '@/components/sections/Hero';
 import { Portfolio } from '@/components/sections/Portfolio';
 import { Service } from '@/components/sections/Service';
 import { Team } from '@/components/sections/Team';
+import { Footer } from '@/layouts/Footer';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -25,6 +26,7 @@ const Index = () => {
       <Team />
       <Portfolio />
       <Contact />
+      <Footer />
     </Main>
   );
 };
