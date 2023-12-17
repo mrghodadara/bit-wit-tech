@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 
 import { NAV_LINK } from '@/constants';
-import Container from '@/layouts/Container';
+import { Container } from '@/layouts/Container';
 
 const Hero = () => {
   return (
@@ -36,10 +37,19 @@ const Hero = () => {
       </div>
       <Container>
         <div className="flex flex-col items-start gap-12 pb-24 pt-4">
-          <h1 className="font-poppins text-[40px] font-bold leading-[50px] text-white">
-            We Develop Experiences <br /> that make <br />
-            {`people's life easier.`}
-          </h1>
+          <div className="min-h-[156px] max-w-lg font-poppins text-[40px] font-bold leading-[50px] text-white">
+            {/* We Develop Experiences <br /> that make <br />
+            {`people's life easier.`} */}
+            <Typewriter
+              options={{
+                strings:
+                  "We Develop Experiences that make people's life easier.",
+                autoStart: true,
+                loop: false,
+                cursorClassName: 'font-medium',
+              }}
+            />
+          </div>
 
           <Link
             href={'#'}
