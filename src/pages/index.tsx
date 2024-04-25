@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import { About } from "@/components/sections/About";
-import { Contact } from "@/components/sections/Contact";
-import { Hero } from "@/components/sections/Hero";
-import { Portfolio } from "@/components/sections/Portfolio";
-import { Service } from "@/components/sections/Service";
-import { Team } from "@/components/sections/Team";
-import { Footer } from "@/layouts/Footer";
-import { Meta } from "@/layouts/Meta";
-import { Main } from "@/templates/Main";
-import { Loader } from "@/components/loader/Loader";
+import { Loader } from '@/components/loader/Loader';
+import { About } from '@/components/sections/About';
+import { Contact } from '@/components/sections/Contact';
+import { Hero } from '@/components/sections/Hero';
+import { Portfolio } from '@/components/sections/Portfolio';
+import { Service } from '@/components/sections/Service';
+import { Team } from '@/components/sections/Team';
+import { Footer } from '@/layouts/Footer';
+import { Meta } from '@/layouts/Meta';
+import { Main } from '@/templates/Main';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
