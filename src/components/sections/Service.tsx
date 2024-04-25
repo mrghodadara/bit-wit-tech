@@ -1,15 +1,15 @@
-import type { ReactNode } from 'react';
-import React from 'react';
+import type { ReactNode } from "react";
+import React from "react";
 
-import { Container } from '@/layouts/Container';
+import { Container } from "@/layouts/Container";
 
-import { ServiceCard } from '../card/ServiceCard';
-import { CameraIcon } from '../icons/CameraIcon';
-import { ComputerIcon } from '../icons/ComputerIcon';
-import { HeartIcon } from '../icons/HeartIcon';
-import { MobileIcon } from '../icons/MobileIcon';
-import { SearchIcon } from '../icons/SearchIcon';
-import { ServerIcon } from '../icons/ServerIcon';
+import { ServiceCard } from "../card/ServiceCard";
+import { CameraIcon } from "../icons/CameraIcon";
+import { ComputerIcon } from "../icons/ComputerIcon";
+import { HeartIcon } from "../icons/HeartIcon";
+import { MobileIcon } from "../icons/MobileIcon";
+import { SearchIcon } from "../icons/SearchIcon";
+import { ServerIcon } from "../icons/ServerIcon";
 
 const OUR_SERVICES: {
   id: number;
@@ -19,45 +19,45 @@ const OUR_SERVICES: {
 }[] = [
   {
     id: 1,
-    name: 'Website Development',
+    name: "Website Development",
     description:
-      'We start from idea to its development and provide end to end solution.We guide our valued clients through all stages in the production of website',
+      "We start from idea to its development and provide end to end solution.We guide our valued clients through all stages in the production of website",
     icon: <ComputerIcon />,
   },
 
   {
     id: 3,
-    name: 'Mobile Development',
+    name: "Mobile Development",
     description:
-      'Over the years, we’ve built up specific knowledge and expertise in creating applications for almost all the niches providing best Mobile Solutions.',
+      "Over the years, we’ve built up specific knowledge and expertise in creating applications for almost all the niches providing best Mobile Solutions.",
     icon: <MobileIcon />,
   },
   {
     id: 4,
-    name: 'Ui/UX Design',
+    name: "Ui/UX Design",
     description:
-      'We deliver easy-to-use interfaces while providing the enterprise-grade code quality.',
+      "We deliver easy-to-use interfaces while providing the enterprise-grade code quality.",
     icon: <CameraIcon />,
   },
   {
     id: 2,
-    name: 'Digital Marketing',
+    name: "Digital Marketing",
     description:
-      'Social media can be a great place to advertise your product, services, and business.We provide excellent social media marketing services.',
+      "Social media can be a great place to advertise your product, services, and business.We provide excellent social media marketing services.",
     icon: <HeartIcon />,
   },
   {
     id: 5,
-    name: 'SEO',
+    name: "SEO",
     description:
-      'We are specialized in achieving top ranking in search engine results by using proven,.',
+      "We are specialized in achieving top ranking in search engine results by using proven,.",
     icon: <SearchIcon />,
   },
   {
     id: 6,
-    name: 'Dedicated Server',
+    name: "Dedicated Server",
     description:
-      'We add a value to website to meet all online needs at one stop with tangible results.',
+      "We add a value to website to meet all online needs at one stop with tangible results.",
     icon: <ServerIcon />,
   },
 ];

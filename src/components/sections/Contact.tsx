@@ -7,8 +7,7 @@ const Contact = () => {
   return (
     <div className="bg-light-50 py-16 lg:py-28">
       <Container>
-        <div className="grid w-full grid-cols-1 gap-14 lg:gap-8 py-4 lg:grid-cols-3">
-
+        <div className="grid w-full grid-cols-1 gap-14 py-4 lg:grid-cols-3 lg:gap-8">
           <div className="relative flex flex-col items-start justify-start gap-4 rounded-xl border border-light-100 bg-white p-14">
             <h4 className="font-poppins text-lg font-bold leading-6 text-dark-50">
               Contact With Phone Number
