@@ -5,7 +5,7 @@ import { Container } from "@/layouts/Container";
 
 const Contact = () => {
   return (
-    <div className="bg-light-50  lg:py-28">
+    <div className="bg-light-50 py-16 lg:py-28">
       <Container>
         <div className="grid w-full grid-cols-1 gap-14 lg:gap-8 py-4 lg:grid-cols-3">
 
