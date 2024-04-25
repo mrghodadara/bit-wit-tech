@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className="bg-banner bg-cover bg-fixed bg-center bg-no-repeat">
       {/* Header */}
-      <div className="flex flex-row items-center justify-between p-12">
+      <div className="flex flex-row items-center justify-between px-5 pb-12 pt-8 lg:p-12">
         <Link href={'/'}>
           <Image
             src={'/assets/images/logo.png'}
@@ -21,7 +21,7 @@ const Hero = () => {
           />
         </Link>
 
-        <div className="flex flex-row items-center justify-end gap-4">
+        <div className="hidden flex-row items-center justify-end gap-4 lg:flex">
           {NAV_LINK &&
             NAV_LINK.length > 0 &&
             NAV_LINK?.map(({ id, name, path }) => (
@@ -35,9 +35,10 @@ const Hero = () => {
             ))}
         </div>
       </div>
+
       <Container>
-        <div className="flex flex-col items-start gap-12 pb-24 pt-4">
-          <div className="min-h-[156px] max-w-lg font-poppins text-[40px] font-bold leading-[50px] text-white">
+        <div className="flex flex-col items-center gap-12 pb-24 pt-4 lg:items-start">
+          <div className="min-h-[156px] max-w-lg bg-center font-poppins text-[40px] font-bold leading-[50px] text-white lg:text-left">
             {/* We Develop Experiences <br /> that make <br />
             {`people's life easier.`} */}
             <Typewriter

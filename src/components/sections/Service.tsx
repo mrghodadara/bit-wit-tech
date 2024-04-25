@@ -64,19 +64,19 @@ const OUR_SERVICES: {
 
 const Service = () => {
   return (
-    <div className="bg-service bg-cover bg-fixed bg-center bg-no-repeat py-28">
+    <div className="bg-service bg-cover bg-fixed bg-center bg-no-repeat py-16 lg:py-28">
       <Container>
         <div className="flex flex-col items-center justify-center gap-12 py-4">
           <div className="flex flex-col items-center justify-center gap-2">
-            <h2 className="font-poppins text-6xl font-bold leading-[140%] text-white">
+            <h2 className="font-poppins text-3xl font-bold leading-[140%] text-white lg:text-6xl">
               Our Service
             </h2>
-            <p className="font-poppins text-xl font-light leading-8 text-white">
+            <p className="text-center font-poppins text-base font-light leading-5 text-white md:text-lg lg:text-xl lg:leading-8">
               Seek every kind of Digital Solution with us!
             </p>
           </div>
 
-          <div className="grid w-full grid-cols-3 gap-8">
+          <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
             {OUR_SERVICES &&
               OUR_SERVICES?.length > 0 &&
               OUR_SERVICES?.map(({ id, icon, name, description }) => (

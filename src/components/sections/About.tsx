@@ -7,8 +7,8 @@ const About = () => {
   return (
     <div className="bg-white py-28">
       <Container>
-        <div className="flex items-center justify-center gap-16 py-4">
-          <div className="w-5/12">
+        <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-16 lg:py-4">
+          <div className="w-full lg:w-5/12">
             <Image
               src={'/assets/images/about.gif'}
               width={1000}
@@ -17,8 +17,8 @@ const About = () => {
             />
           </div>
 
-          <div className="flex w-7/12 flex-col items-start gap-6">
-            <h3 className="font-poppins text-6xl font-bold leading-7 text-dark-50">
+          <div className="flex w-full flex-col items-start gap-6 lg:w-7/12">
+            <h3 className="font-poppins text-4xl font-bold leading-7 text-dark-50 lg:text-6xl">
               About <span className="text-2xl">BITWIT TECHNOLOGIES</span>
             </h3>
 
