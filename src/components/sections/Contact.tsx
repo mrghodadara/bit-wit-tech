@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { CONTACT_NUMBERS, EMAILS } from "@/constants/contact";
-import { Container } from "@/layouts/Container";
+import { CONTACT_NUMBERS, EMAILS } from '@/constants/contact';
+import { Container } from '@/layouts/Container';
 
 const Contact = () => {
   return (

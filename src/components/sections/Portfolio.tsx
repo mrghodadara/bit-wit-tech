@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import { Container } from "@/layouts/Container";
+import { Container } from '@/layouts/Container';
 
-import { Counter } from "../counter/Index";
+import { Counter } from '../counter/Index';
 
 const LISTS: { id: number; label: string; count: number }[] = [
-  { id: 1, label: "Years of Experience", count: 6 },
-  { id: 2, label: "Projects", count: 46 },
-  { id: 3, label: "Happy Customers", count: 26 },
+  { id: 1, label: 'Years of Experience', count: 6 },
+  { id: 2, label: 'Projects', count: 46 },
+  { id: 3, label: 'Happy Customers', count: 26 },
 ];
 
 const Portfolio = () => {

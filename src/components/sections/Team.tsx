@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { Container } from "@/layouts/Container";
+import { Container } from '@/layouts/Container';
 
-import { TeamCard } from "../card/TeamCard";
+import { TeamCard } from '../card/TeamCard';
 
 const OUR_TEAMS: {
   id: number;
@@ -15,30 +15,30 @@ const OUR_TEAMS: {
 }[] = [
   {
     id: 1,
-    name: "Vivek Ghodadara",
-    title: "Founder & CEO",
-    profile: "/assets/images/profile/vivek.png",
-    faceBook: "",
-    instagram: "",
-    linkedin: "",
+    name: 'Vivek Ghodadara',
+    title: 'Founder & CEO',
+    profile: '/assets/images/profile/vivek.png',
+    faceBook: '',
+    instagram: '',
+    linkedin: '',
   },
   {
     id: 2,
-    name: "Piyush Kalsariya",
-    title: "Co-Founder",
-    profile: "/assets/images/profile/piyush.png",
-    faceBook: "",
-    instagram: "",
-    linkedin: "",
+    name: 'Piyush Kalsariya',
+    title: 'Co-Founder',
+    profile: '/assets/images/profile/piyush.png',
+    faceBook: '',
+    instagram: '',
+    linkedin: '',
   },
   {
     id: 3,
-    name: "Darshan Kalsariya",
-    title: "Co-Founder",
-    profile: "/assets/images/profile/darshan.png",
-    faceBook: "",
-    instagram: "",
-    linkedin: "",
+    name: 'Darshan Kalsariya',
+    title: 'Co-Founder',
+    profile: '/assets/images/profile/darshan.png',
+    faceBook: '',
+    instagram: '',
+    linkedin: '',
   },
 ];
 

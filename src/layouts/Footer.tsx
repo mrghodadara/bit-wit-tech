@@ -1,12 +1,12 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
-import { Container } from "./Container";
+import { Container } from './Container';
 
 const LINKS: { id: number; label: string; path: string }[] = [
-  { id: 1, label: "Work", path: "#" },
-  { id: 2, label: "About", path: "#" },
-  { id: 3, label: `Let's Talk`, path: "#" },
+  { id: 1, label: 'Work', path: '#' },
+  { id: 2, label: 'About', path: '#' },
+  { id: 3, label: `Let's Talk`, path: '#' },
 ];
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
                 {`Let's get to work`}
               </h3>
               <Link
-                href={"#"}
+                href={'#'}
                 className="mt-6 rounded-md border-2 border-white bg-transparent px-10 py-3.5 font-poppins text-base font-medium uppercase text-white shadow-2xl duration-300 ease-linear hover:-translate-y-1.5 hover:bg-white hover:text-light-purple-75 lg:mt-12"
               >
                 CONTACT US
@@ -61,7 +61,7 @@ const Footer = () => {
                 </h3>
 
                 <Link
-                  href={"#"}
+                  href={'#'}
                   className="font-poppins text-base text-light-25 opacity-75 duration-300  ease-linear hover:text-primary"
                 >
                   social@bitwittech.com
