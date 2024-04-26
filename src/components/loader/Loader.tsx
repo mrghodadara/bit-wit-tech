@@ -1,13 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const Loader = () => {
   return (
-    <svg
-      className="pl"
-      viewBox="0 0 200 200"
-      width="200"
-      height="200"
-    >
+    <svg className="pl" viewBox="0 0 200 200" width="200" height="200">
       <defs>
         <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
           <stop offset="0%" stop-color="hsl(313,90%,55%)" />
