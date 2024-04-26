@@ -1,48 +1,47 @@
-import React from 'react';
+import React from "react";
 
 const Loader = () => {
   return (
     <svg
-      className="ip"
-      viewBox="0 0 256 128"
-      width="256px"
-      height="128px"
-      xmlns="http://www.w3.org/2000/svg"
+      className="pl"
+      viewBox="0 0 200 200"
+      width="200"
+      height="200"
     >
       <defs>
-        <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="#5ebd3e" />
-          <stop offset="33%" stop-color="#ffb900" />
-          <stop offset="67%" stop-color="#f78200" />
-          <stop offset="100%" stop-color="#e23838" />
+        <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+          <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+          <stop offset="100%" stop-color="hsl(223,90%,55%)" />
         </linearGradient>
-        <linearGradient id="grad2" x1="1" y1="0" x2="0" y2="0">
-          <stop offset="0%" stop-color="#e23838" />
-          <stop offset="33%" stop-color="#973999" />
-          <stop offset="67%" stop-color="#009cdf" />
-          <stop offset="100%" stop-color="#5ebd3e" />
+        <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+          <stop offset="100%" stop-color="hsl(223,90%,55%)" />
         </linearGradient>
       </defs>
-      <g fill="none" stroke-linecap="round" stroke-width="16">
-        <g className="ip__track" stroke="#ddd">
-          <path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56" />
-          <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" />
-        </g>
-        <g stroke-dasharray="180 656">
-          <path
-            className="ip__worm1"
-            stroke="url(#grad1)"
-            stroke-dashoffset="0"
-            d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"
-          />
-          <path
-            className="ip__worm2"
-            stroke="url(#grad2)"
-            stroke-dashoffset="358"
-            d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"
-          />
-        </g>
-      </g>
+      <circle
+        className="pl__ring"
+        cx="100"
+        cy="100"
+        r="82"
+        fill="none"
+        stroke="url(#pl-grad1)"
+        strokeWidth="36"
+        strokeDasharray="0 257 1 257"
+        strokeDashoffset="0.01"
+        strokeLinecap="round"
+        transform="rotate(-90,100,100)"
+      />
+      <line
+        className="pl__ball"
+        stroke="url(#pl-grad2)"
+        x1="100"
+        y1="18"
+        x2="100.01"
+        y2="182"
+        strokeWidth="36"
+        strokeDasharray="1 165"
+        strokeLinecap="round"
+      />
     </svg>
   );
 };

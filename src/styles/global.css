@@ -15,72 +15,61 @@
 }
 :root {
 	--hue: 223;
-	--bg: hsl(var(--hue),90%,95%);
-	--fg: hsl(var(--hue),90%,5%);
-	--trans-dur: 0.3s;
-	/* font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320)); */
-}
-body {
-	background-color: var(--bg);
-	color: var(--fg);
-	font: 1em/1.5 sans-serif;
-	height: 100vh;
-	place-items: center;
-	transition: background-color var(--trans-dur);
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
 }
 
-.ip {
-	width: 14em;
-	height: 7em;
+.pl {
+	display: block;
+	width: 6.25em;
+	height: 6.25em;
 }
-.ip__track {
-	stroke: hsl(var(--hue),90%,90%);
-	transition: stroke var(--trans-dur);
+.pl__ring, .pl__ball {
+	animation: ring 2s ease-out infinite;
 }
-.ip__worm1,
-.ip__worm2 {
-	animation: worm1 2s linear infinite;
-}
-.ip__worm2 {
-	animation-name: worm2;
+.pl__ball {
+	animation-name: ball;
 }
 
-/* Dark theme */
+/* Dark theme  */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg: hsl(var(--hue),90%,5%);
-		--fg: hsl(var(--hue),90%,95%);
-	}
-	.ip__track {
-		stroke: hsl(var(--hue),90%,15%);
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
 	}
 }
 
 /* Animation */
-@keyframes worm1 {
+@keyframes ring {
 	from {
-		stroke-dashoffset: 0;
+		stroke-dasharray: 0 257 0 0 1 0 0 258;
 	}
-	50% {
-		animation-timing-function: steps(1);
-		stroke-dashoffset: -358;
+	25% {
+		stroke-dasharray: 0 0 0 0 257 0 258 0;
 	}
-	50.01% {
-		animation-timing-function: linear;
-		stroke-dashoffset: 358;
-	}
-	to {
-		stroke-dashoffset: 0;
+	50%, to {
+		stroke-dasharray: 0 0 0 0 0 515 0 0;
 	}
 }
-@keyframes worm2 {
-	from {
-		stroke-dashoffset: 358;
+@keyframes ball {
+	from, 50% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 1;
 	}
-	50% {
-		stroke-dashoffset: 0;
+	64% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -109;
 	}
-	to {
-		stroke-dashoffset: -358;
+	78% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -145;
+	}
+	92% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -157;
+	}
+	57%, 71%, 85%, 99%, to {
+		animation-timing-function: ease-out;
+		stroke-dashoffset: -163;
 	}
 }
