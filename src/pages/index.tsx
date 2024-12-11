@@ -24,8 +24,8 @@ const Index = () => {
     <Main
       meta={
         <Meta
-          title="Whole Home Protection Plans | American Water Resources"
-          description="American Water Resources offers affordable whole home protection programs that help protect against unexpected repair costs for various home emergencies."
+          title="Bitwit Technologies: Your Partner for Digital Success"
+          description="Bitwit Technologies: Your Partner for Digital Success"
         />
       }
     >
